@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX Case Study — NHS Booking Redesign</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">UX Portfolio</div>
+    <div class="nav-links">
+      <a href="#problem">Problem</a>
+      <a href="#research">Research</a>
+      <a href="#design">Design</a>
+      <a href="#outcome">Outcome</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">UX Case Study</div>
+      <h1>Redesigning <strong>NHS online appointment booking</strong> for anxious and elderly users</h1>
+      <div class="hero-meta">
+        <div><span>Role</span>UX Researcher &amp; Designer</div>
+        <div><span>Duration</span>6 weeks</div>
+        <div><span>Methods</span>User Interviews, Heuristic Evaluation, Prototyping</div>
+        <div><span>Tools</span>Figma, Miro, Maze</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <div class="section-label">Design Process</div>
+      <h2>A human-centred approach</h2>
+      <p>Following IBM's Enterprise Design Thinking framework, this project moved through five phases — always returning to users as the source of truth.</p>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <h3>Discover</h3>
+          <p>Desk research, NHS digital service reviews, and stakeholder mapping to understand the landscape.</p>
+          <span class="step-tag">Empathise</span>
+        </div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <h3>Research</h3>
+          <p>6 user interviews + a survey of 42 participants to identify pain points with the existing booking flow.</p>
+          <span class="step-tag">Define</span>
+        </div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <h3>Synthesise</h3>
+          <p>Affinity mapping and persona creation to distil key insights into actionable design principles.</p>
+          <span class="step-tag">Define</span>
+        </div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <h3>Ideate &amp; Prototype</h3>
+          <p>Low-fidelity sketches → mid-fidelity wireframes → interactive Figma prototype.</p>
+          <span class="step-tag">Ideate</span>
+        </div>
+        <div class="process-step">
+          <div class="step-num">05</div>
+          <h3>Test &amp; Iterate</h3>
+          <p>Usability testing with 8 participants using Maze; iterated on navigation and language clarity.</p>
+          <span class="step-tag">Test</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section id="problem" class="bg-light">
+    <div class="container">
+      <div class="section-label">The Problem</div>
+      <h2>Booking a GP appointment should not feel like a barrier</h2>
+      <p>The NHS online booking system serves over 30 million users, yet consistently scores low on accessibility and usability benchmarks. For older adults and people with health anxiety, friction in this process has real consequences — missed appointments, increased A&amp;E load, and eroded trust in digital services.</p>
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-icon">😤</span>
+          <h3>Unclear language</h3>
+          <p>Users couldn't distinguish between GP, urgent, and routine appointment types without prior NHS knowledge.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">🔁</span>
+          <h3>Too many redirects</h3>
+          <p>The existing flow required 7+ page loads and 3 separate systems to complete a single booking.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">📵</span>
+          <h3>Poor mobile experience</h3>
+          <p>68% of users access the service on mobile, yet key CTAs were below the fold or too small to tap comfortably.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">🧓</span>
+          <h3>Excluded demographics</h3>
+          <p>Low literacy users and those with visual impairments found the interface inaccessible, violating WCAG 2.1 AA standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="container">
+      <div class="section-label">Research Insights</div>
+      <h2>What users actually told us</h2>
+      <p>Semi-structured interviews and a quantitative survey surfaced consistent themes around trust, confusion, and abandonment.</p>
+
+      <div class="stat-strip stat-strip--light">
+        <div class="stat-item stat-item--light">
+          <span class="stat-num stat-num--blue">73%</span>
+          <div class="stat-label stat-label--dark">of users abandoned the booking flow at least once</div>
+        </div>
+        <div class="stat-item stat-item--light">
+          <span class="stat-num stat-num--blue">4.2 min</span>
+          <div class="stat-label stat-label--dark">average time to complete — target was under 2 mins</div>
+        </div>
+        <div class="stat-item stat-item--light">
+          <span class="stat-num stat-num--blue">6/8</span>
+          <div class="stat-label stat-label--dark">usability test participants confused by appointment type labels</div>
+        </div>
+        <div class="stat-item stat-item--light">
+          <span class="stat-num stat-num--blue">2.3/5</span>
+          <div class="stat-label stat-label--dark">average satisfaction score for existing flow</div>
+        </div>
+      </div>
+
+      <div class="section-label" style="margin-top: 2.5rem;">User Persona</div>
+      <div class="persona-card">
+        <div class="persona-avatar">👩‍🦳</div>
+        <div class="persona-details">
+          <h3>Margaret, 67</h3>
+          <div class="persona-role">Retired teacher · Moderate health anxiety · Smartphone user since 2018</div>
+          <div class="persona-tags">
+            <span class="persona-tag">Low digital literacy</span>
+            <span class="persona-tag">Reads every word carefully</span>
+            <span class="persona-tag">Distrusts unfamiliar systems</span>
+            <span class="persona-tag">Needs reassurance at each step</span>
+          </div>
+          <p class="persona-quote">"I pressed the wrong button and I didn't know if I'd accidentally booked something. I just gave up and called the surgery instead."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN -->
+  <section id="design" class="bg-light">
+    <div class="container">
+      <div class="section-label">The Design</div>
+      <h2>Before vs. After — Interactive Prototype Preview</h2>
+      <p>The redesign focused on progressive disclosure, plain English, and a clear visual hierarchy that works on mobile first.</p>
+
+      <div class="wireframe-section">
+        <div class="wireframe-tabs">
+          <button class="tab-btn active" data-tab="before">❌ Before</button>
+          <button class="tab-btn" data-tab="after">✅ After (Redesign)</button>
+        </div>
+
+        <!-- BEFORE -->
+        <div id="before" class="tab-panel active">
+          <div class="mockup-browser screen-before">
+            <div class="mockup-bar">
+              <div class="dot dot-r"></div>
+              <div class="dot dot-y"></div>
+              <div class="dot dot-g"></div>
+              <div class="url-bar">patient.nhs.uk/appointments/book</div>
+            </div>
+            <div>
+              <div class="screen-nav-old">
+                <span>NHS | Patient Online Services</span>
+                <span>Help | Logout</span>
+              </div>
+              <div class="old-form">
+                <h2>Book an Appointment <span class="pain-badge">Jargon</span></h2>
+                <div class="old-field">
+                  <label>Appointment type <span class="pain-badge">Unclear</span></label>
+                  <select>
+                    <option>-- Select --</option>
+                    <option>GP Consultation (Routine)</option>
+                    <option>GP Consultation (Urgent)</option>
+                    <option>Extended Access</option>
+                    <option>Online Triage (eConsult)</option>
+                  </select>
+                </div>
+                <div class="old-field">
+                  <label>ODS Code (optional)</label>
+                  <input type="text" placeholder="e.g. F83006" />
+                </div>
+                <div class="old-field">
+                  <label>Preferred date range</label>
+                  <input type="text" placeholder="DD/MM/YYYY — DD/MM/YYYY" />
+                </div>
+                <div class="old-field">
+                  <label>Clinician preference</label>
+                  <input type="text" placeholder="Leave blank for any available" />
+                </div>
+                <button class="old-btn">Search Appointments →</button>
+                <p class="old-disclaimer">
+                  ⚠ If you need urgent medical attention, please call 111 or visit nhs.uk/urgent-medical-help.
+                  This form is for non-emergency bookings only. For prescription requests, please use the Repeat Prescriptions section.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="panel-note panel-note--bad">🔴 Pain points: ODS Code field, vague appointment types, no progress indicator, wall of disclaimer text.</p>
+        </div>
+
+        <!-- AFTER -->
+        <div id="after" class="tab-panel">
+          <div class="mockup-browser">
+            <div class="mockup-bar">
+              <div class="dot dot-r"></div>
+              <div class="dot dot-y"></div>
+              <div class="dot dot-g"></div>
+              <div class="url-bar">nhs.uk/book-appointment</div>
+            </div>
+            <div>
+              <div class="after-nav">
+                <span>Book a GP appointment</span>
+                <span class="back">← Back</span>
+              </div>
+              <div class="after-progress-bar-wrap">
+                <div class="after-progress-bar-fill"></div>
+                <div class="after-progress-label">Step 1 of 3 — Choose your GP surgery</div>
+              </div>
+              <div class="after-body">
+                <div class="step-indicator">Step 1 of 3</div>
+                <h2>Which GP surgery do you go to?</h2>
+                <p class="subtitle">We'll show you available times at your surgery.</p>
+                <div class="gp-list">
+                  <div class="gp-item selected">
+                    <div>
+                      <div class="gp-name">Sunridge Medical Centre</div>
+                      <div class="gp-dist">📍 0.4 miles away</div>
+                    </div>
+                    <span class="gp-avail">Times available today</span>
+                  </div>
+                  <div class="gp-item">
+                    <div>
+                      <div class="gp-name">The Brambles Surgery</div>
+                      <div class="gp-dist">📍 1.2 miles away</div>
+                    </div>
+                    <span class="gp-avail">Times available tomorrow</span>
+                  </div>
+                  <div class="gp-item">
+                    <div>
+                      <div class="gp-name">Whitmore Road Practice</div>
+                      <div class="gp-dist">📍 2.1 miles away</div>
+                    </div>
+                    <span class="gp-next">Next: Thursday</span>
+                  </div>
+                </div>
+                <button class="cta-btn">Continue →</button>
+              </div>
+            </div>
+          </div>
+          <p class="panel-note panel-note--good">✅ Improvements: Plain English questions, progress bar, location-aware, no jargon, mobile-first.</p>
+        </div>
+      </div>
+
+      <!-- DESIGN PRINCIPLES -->
+      <div class="section-label" style="margin-top: 3rem;">Design Principles Applied</div>
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-icon">🧠</span>
+          <h3>Progressive disclosure</h3>
+          <p>Only show information relevant to the current step. Removed the "ODS Code" field entirely from the user-facing flow.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">🗣️</span>
+          <h3>Plain English</h3>
+          <p>Rewrote all labels using plain language guidelines. "GP Consultation (Routine)" → "I need to see a doctor".</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">📱</span>
+          <h3>Mobile-first</h3>
+          <p>Designed at 375px breakpoint first. All interactive targets meet WCAG 2.1 minimum 44×44px touch target size.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOME -->
+  <section id="outcome" class="bg-dark">
+    <div class="container">
+      <div class="section-label">Outcomes &amp; Impact</div>
+      <h2>Testing showed measurable improvement</h2>
+      <p>After two rounds of usability testing with the redesigned prototype, key metrics improved significantly compared to the baseline.</p>
+      <div class="stat-strip">
+        <div class="stat-item">
+          <span class="stat-num">54% → 91%</span>
+          <div class="stat-label">Task completion rate</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4.2 → 1.8 min</span>
+          <div class="stat-label">Time-on-task</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">2.3 → 4.1 /5</span>
+          <div class="stat-label">User satisfaction score</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">WCAG AA ✓</span>
+          <div class="stat-label">Accessibility compliance</div>
+        </div>
+      </div>
+      <div class="outcome-grid">
+        <div class="outcome-item">
+          <h3>Task completion rate</h3>
+          <p>Increased from 54% → 91% across all user groups in moderated usability sessions.</p>
+        </div>
+        <div class="outcome-item">
+          <h3>Time-on-task</h3>
+          <p>Reduced average booking time from 4.2 minutes to 1.8 minutes — within the 2-minute target.</p>
+        </div>
+        <div class="outcome-item">
+          <h3>Satisfaction score</h3>
+          <p>SUS-adapted score improved from 2.3/5 to 4.1/5, reflecting a significantly more trusted experience.</p>
+        </div>
+        <div class="outcome-item">
+          <h3>Accessibility</h3>
+          <p>Redesigned components passed WCAG 2.1 AA checks across colour contrast, touch targets, and alt text.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-name">Arn Gabriel Canares</div>
+    <p>UX Designer &amp; Researcher · London, UK</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="mailto:your@email.com">accanares1@gmail.com</a> 
+    </p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="top-btn" aria-label="Back to top">↑ Top</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
